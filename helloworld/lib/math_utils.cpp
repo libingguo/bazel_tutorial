@@ -20,4 +20,10 @@ int factorial(int n) {
     return n <= 1 ? 1 : n * factorial(n - 1);
 }
 
+int gcd(int a, int b) {
+    if (a < 0 || b < 0) throw std::invalid_argument("negative input");
+    while (b) { a %= b; std::swap(a, b); }
+    return a;
+}
+
 }  // namespace math

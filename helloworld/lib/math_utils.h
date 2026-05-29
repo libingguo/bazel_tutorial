@@ -7,5 +7,6 @@ int subtract(int a, int b);
 int multiply(int a, int b);
 double divide(double a, double b);
 int factorial(int n);
+int gcd(int a, int b);
 
 }  // namespace math

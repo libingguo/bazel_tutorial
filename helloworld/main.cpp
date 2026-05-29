@@ -9,6 +9,7 @@ int main() {
     std::cout << "multiply(6, 7)  = " << math::multiply(6, 7) << "\n";
     std::cout << "divide(22, 7)   = " << math::divide(22, 7) << "\n";
     std::cout << "factorial(5)    = " << math::factorial(5) << "\n";
+    std::cout << "gcd(48, 18)     = " << math::gcd(48, 18) << "\n";
 
     return 0;
 }

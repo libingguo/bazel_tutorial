@@ -51,6 +51,13 @@ int main() {
     EXPECT_THROW(math::factorial(-1), std::invalid_argument);
     EXPECT_THROW(math::divide(1.0, 0.0), std::invalid_argument);
 
+    std::cout << "=== math::gcd ===\n";
+    EXPECT_EQ(math::gcd(48, 18), 6);
+    EXPECT_EQ(math::gcd(100, 75), 25);
+    EXPECT_EQ(math::gcd(7, 13), 1);
+    EXPECT_EQ(math::gcd(0, 5), 5);
+    EXPECT_THROW(math::gcd(-1, 5), std::invalid_argument);
+
     std::cout << "\nAll tests passed.\n";
     return 0;
 }
