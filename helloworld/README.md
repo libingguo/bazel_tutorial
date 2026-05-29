@@ -28,6 +28,8 @@ subtract(10, 3) = 7
 multiply(6, 7)  = 42
 divide(22, 7)   = 3.14286
 factorial(5)    = 120
+gcd(48, 18)     = 6
+power(2, 10)    = 1024
 ```
 
 ## Test
