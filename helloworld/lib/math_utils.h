@@ -1,0 +1,11 @@
+#pragma once
+
+namespace math {
+
+int add(int a, int b);
+int subtract(int a, int b);
+int multiply(int a, int b);
+double divide(double a, double b);
+int factorial(int n);
+
+}  // namespace math

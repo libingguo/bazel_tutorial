@@ -1,0 +1,7 @@
+load("@rules_cc//cc:defs.bzl", "cc_test")
+
+cc_test(
+    name = "math_utils_test",
+    srcs = ["math_utils_test.cpp"],
+    deps = ["//lib:math_utils"],
+)
