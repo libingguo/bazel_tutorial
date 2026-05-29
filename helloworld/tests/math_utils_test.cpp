@@ -58,6 +58,13 @@ int main() {
     EXPECT_EQ(math::gcd(0, 5), 5);
     EXPECT_THROW(math::gcd(-1, 5), std::invalid_argument);
 
+    std::cout << "=== math::power ===\n";
+    EXPECT_EQ(math::power(2, 10), 1024);
+    EXPECT_EQ(math::power(3, 4), 81);
+    EXPECT_EQ(math::power(5, 0), 1);
+    EXPECT_EQ(math::power(0, 5), 0);
+    EXPECT_THROW(math::power(2, -1), std::invalid_argument);
+
     std::cout << "\nAll tests passed.\n";
     return 0;
 }

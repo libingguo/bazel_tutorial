@@ -10,6 +10,7 @@ int main() {
     std::cout << "divide(22, 7)   = " << math::divide(22, 7) << "\n";
     std::cout << "factorial(5)    = " << math::factorial(5) << "\n";
     std::cout << "gcd(48, 18)     = " << math::gcd(48, 18) << "\n";
+    std::cout << "power(2, 10)    = " << math::power(2, 10) << "\n";
 
     return 0;
 }

@@ -26,4 +26,15 @@ int gcd(int a, int b) {
     return a;
 }
 
+int power(int base, int exp) {
+    if (exp < 0) throw std::invalid_argument("negative exponent");
+    int result = 1;
+    while (exp > 0) {
+        if (exp & 1) result *= base;
+        base *= base;
+        exp >>= 1;
+    }
+    return result;
+}
+
 }  // namespace math
