@@ -1,0 +1,2 @@
+# Fallback to official BCR for modules not available in internal mirrors
+build --registry=https://bcr.bazel.build
