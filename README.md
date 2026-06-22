@@ -7,7 +7,7 @@ A hands-on C++ project for learning the [Bazel](https://bazel.build) build syste
 | Directory | Description |
 |---|---|
 | `helloworld/` | Multi-package C++ project demonstrating core Bazel concepts |
-| `examples/` | Official [bazelbuild/examples](https://github.com/bazelbuild/examples) (submodule) |
+| `cpp-tutorial/` | Three-stage C++ tutorial from the official [Bazel docs](https://bazel.build/start/cpp) |
 
 ## Quick Start
 
@@ -56,10 +56,23 @@ bazel test //tests:all
 | `visibility` — access control between packages | `helloworld/lib/BUILD.bazel` |
 | Target wildcards (`//...`, `//tests:all`) | Build/test commands above |
 
-## Cloning
+## cpp-tutorial Stages
 
-This repo uses a git submodule for `examples/`. Clone with:
+| Stage | What it demonstrates |
+|---|---|
+| `stage1/` | Single source file compiled into a binary |
+| `stage2/` | Multiple source/header files split into a library and a binary |
+| `stage3/` | Multiple packages linked together across build directories |
+
+Each stage is a self-contained Bazel workspace. Run any of them with:
 
 ```bash
-git clone --recurse-submodules https://github.com/libingguo/bazel_tutorial.git
+cd cpp-tutorial/stage3
+bazel build //...
+```
+
+## Cloning
+
+```bash
+git clone https://github.com/libingguo/bazel_tutorial.git
 ```
